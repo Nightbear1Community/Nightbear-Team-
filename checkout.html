@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Nightbear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-header">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <img src="logo.png" alt="Nightbear Logo" class="checkout-logo">
+        </div>
+        
+        <div class="checkout-content">
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="selected-plan">
+                    <h3 id="plan-name">Premium Plan</h3>
+                    <p id="plan-price">$9.99</p>
+                </div>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Advanced Script Execution</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Premium Scripts</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Priority Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-section">
+                <h2>Payment Details</h2>
+                <div class="payment-methods">
+                    <button class="payment-method active" data-method="card">
+                        <i class="fas fa-credit-card"></i>
+                        Credit Card
+                    </button>
+                    <button class="payment-method" data-method="paypal">
+                        <i class="fab fa-paypal"></i>
+                        PayPal
+                    </button>
+                    <button class="payment-method" data-method="vodafone">
+                        <i class="fas fa-mobile-alt"></i>
+                        Vodafone Cash
+                    </button>
+                </div>
+
+                <form id="card-form" class="payment-form card active">
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" id="card-number" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY" maxlength="5" id="expiry-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="text" placeholder="123" maxlength="3" id="cvv" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Name on Card</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <button type="submit" class="pay-btn">
+                        <span>Pay Now</span>
+                        <span id="payment-amount">$9.99</span>
+                    </button>
+                </form>
+
+                <form id="paypal-form" class="payment-form paypal">
+                    <div class="form-group">
+                        <label>PayPal Email</label>
+                        <input type="email" placeholder="your@email.com" required>
+                    </div>
+                    <button type="submit" class="pay-btn">
+                        <span>Pay with PayPal</span>
+                        <span id="paypal-amount">$9.99</span>
+                    </button>
+                </form>
+
+                <form id="vodafone-form" class="payment-form vodafone-cash">
+                    <div class="form-group">
+                        <label>Vodafone Cash Number</label>
+                        <input type="tel" placeholder="01xxxxxxxxx" pattern="01[0-9]{9}" required>
+                    </div>
+                    <button type="submit" class="pay-btn">
+                        <span>Pay with Vodafone Cash</span>
+                        <span id="vodafone-amount">$9.99</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

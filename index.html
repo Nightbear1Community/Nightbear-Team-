@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightbear - Professional Roblox Executor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader">
+            <img src="logo.png" alt="Nightbear Logo" class="loader-logo">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-logo">
+            <img src="logo.png" alt="Nightbear Logo">
+            <span>Nightbear</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#scripts">Scripts</a>
+            <a href="#shop">Shop</a>
+            <a href="#faq">FAQ</a>
+            <a href="https://discord.gg/your-server" class="discord-btn" target="_blank">
+                <i class="fab fa-discord"></i> Join Discord
+            </a>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>The Most Powerful Roblox Executor</h1>
+            <p>Experience seamless script execution with Nightbear's advanced features</p>
+            <div class="platform-selector">
+                <div class="dropdown">
+                    <button class="dropbtn">Select Platform <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" class="windows-download" data-timer="20">Windows</a>
+                        <a href="#" class="coming-soon">MacOS (Coming Soon)</a>
+                        <a href="#" class="coming-soon">iOS (Coming Soon)</a>
+                        <a href="#" class="coming-soon">Android (Coming Soon)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Premium Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Execution</h3>
+                <p>Execute scripts instantly with our optimized engine</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Anti-Detection</h3>
+                <p>Advanced protection against detection systems</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Script Hub</h3>
+                <p>Access to premium scripts and regular updates</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="shop">
+        <h2>Choose Your Plan</h2>
+        <div class="plans-container">
+            <div class="plan-card">
+                <h3>Basic</h3>
+                <p class="price">Free</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Basic Script Execution</li>
+                    <li><i class="fas fa-check"></i> Standard Features</li>
+                    <li><i class="fas fa-check"></i> Community Support</li>
+                </ul>
+                <button class="download-btn">Download Now</button>
+            </div>
+            <div class="plan-card premium">
+                <h3>Premium</h3>
+                <div class="duration-selector">
+                    <select id="premium-duration">
+                        <option value="daily">1 Day - $2.99</option>
+                        <option value="weekly">1 Week - $9.99</option>
+                        <option value="biweekly">2 Weeks - $16.99</option>
+                    </select>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Advanced Script Execution</li>
+                    <li><i class="fas fa-check"></i> Premium Scripts</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                </ul>
+                <button class="buy-btn">Purchase Now</button>
+            </div>
+            <div class="plan-card ultimate">
+                <h3>Ultimate</h3>
+                <div class="duration-selector">
+                    <select id="ultimate-duration">
+                        <option value="sixmonths">6 Months - $49.99</option>
+                        <option value="annual">1 Year - $89.99</option>
+                    </select>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i> All Premium Features</li>
+                    <li><i class="fas fa-check"></i> Exclusive Scripts</li>
+                    <li><i class="fas fa-check"></i> VIP Support</li>
+                </ul>
+                <button class="buy-btn">Purchase Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="scripts" class="scripts">
+        <h2>Popular Scripts</h2>
+        <div class="scripts-grid">
+            <div class="script-card">
+                <h3>Admin Commands</h3>
+                <p>Powerful admin commands for game control</p>
+                <button class="copy-btn">Copy Script</button>
+            </div>
+            <div class="script-card">
+                <h3>Auto Farm</h3>
+                <p>Automated farming for popular games</p>
+                <button class="copy-btn">Copy Script</button>
+            </div>
+            <div class="script-card">
+                <h3>ESP Script</h3>
+                <p>Advanced ESP features for better visibility</p>
+                <button class="copy-btn">Copy Script</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is Nightbear safe to use?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Nightbear is completely safe to use. We regularly update our security features to ensure the safety of our users.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I get started?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Simply download Nightbear, run the installer, and you're ready to go! Check our Discord for detailed guides.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What games are supported?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nightbear supports most popular Roblox games. Check our script hub for a complete list of supported games.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Nightbear Logo">
+                <span>Nightbear</span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#scripts">Scripts</a>
+                <a href="#shop">Shop</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="social-links">
+                <a href="https://discord.gg/your-server" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nightbear. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
